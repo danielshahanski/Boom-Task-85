@@ -7,7 +7,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
   for (let i = 1; i <= 10; i++) {
       // eslint-disable-next-line no-undef
-    fetch('https://pokeapi.co/api/v2/pokemon/'+i)
+    fetch('https://pokeapi.co/api/v2/pokemon/'+i+'?limit=10')//the limit does NOT work
         .then(response => response.json())
         .then(json => {
             let li = document.createElement('li');
